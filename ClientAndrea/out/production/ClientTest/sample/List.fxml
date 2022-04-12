@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="401.0" prefWidth="257.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ListController">
+   <children>
+      <ListView styleClass="" fx:id="listView" layoutX="13.0" layoutY="49.0" prefHeight="337.0" prefWidth="230.0" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="49.0" />
+      <Label id="user" fx:id="user" layoutX="13.0" layoutY="6.0" prefHeight="17.0" prefWidth="134.0" text="Utente">
+       <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+         <effect>
+         </effect></Label>
+      <Label layoutX="14.0" layoutY="32.0" prefHeight="17.0" prefWidth="70.0" text="Stato server" />
+      <Circle fx:id="stato" fill="#ff1f1f" layoutX="91.0" layoutY="40.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
