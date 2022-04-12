@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="content" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ContentController">
+   <center>
+      <TextArea id="cont" fx:id="cont" editable="false" prefHeight="157.0" prefWidth="560.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextArea>
+   </center>
+   <bottom>
+      <GridPane prefHeight="58.0" prefWidth="577.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="71.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="117.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="0.0" prefWidth="112.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="33.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="56.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="73.0" minWidth="10.0" prefWidth="37.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="14.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="22.0" minHeight="4.0" prefHeight="16.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="del" fx:id="del" mnemonicParsing="false" onAction="#delete" prefHeight="27.0" prefWidth="63.0" styleClass="danger" text="Elimina" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button  id="risp" fx:id="risp" mnemonicParsing="false" onAction="#rispondi" prefHeight="27.0" prefWidth="66.0" styleClass="info" text="Ripondi" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button  id="risp_all" fx:id="risp_all" mnemonicParsing="false" onAction="#rispondi_all" prefHeight="27.0" prefWidth="109.0" styleClass="info" text="Rispondi a tutti" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button  id="inoltra" fx:id="inoltra" mnemonicParsing="false" onAction="#inoltra" prefHeight="27.0" prefWidth="65.0" styleClass="info" text="Inoltra" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#scrivi" prefHeight="27.0" prefWidth="69.0" styleClass="success" text="Scrivi" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="72.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="da" layoutX="17.0" layoutY="52.0" text="Da:" AnchorPane.leftAnchor="17.0" />
+            <Label fx:id="a" layoutX="17.0" layoutY="85.0" text="A:" AnchorPane.leftAnchor="17.0" />
+            <Label fx:id="obj" layoutX="17.0" layoutY="17.0" text="Oggetto:" AnchorPane.leftAnchor="14.0" />
+            <Label fx:id="dat" layoutX="366.0" layoutY="17.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Data: " AnchorPane.rightAnchor="202.0" />
+            <TextField fx:id="arg" editable="false" layoutX="75.0" layoutY="12.0" maxHeight="1.7976931348623157E308" maxWidth="500.0" minHeight="10.0" minWidth="200.0" prefHeight="27.0" prefWidth="217.0" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="310.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <TextField fx:id="mit" editable="false" layoutX="75.0" layoutY="47.0" maxWidth="500.0" prefHeight="27.0" prefWidth="217.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="309.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <TextField fx:id="dest" editable="false" layoutX="75.0" layoutY="84.0" prefHeight="27.0" prefWidth="217.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="311.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <TextField fx:id="data" editable="false" layoutX="407.0" layoutY="12.0" prefHeight="27.0" prefWidth="168.0" AnchorPane.rightAnchor="25.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </top>
+</BorderPane>
