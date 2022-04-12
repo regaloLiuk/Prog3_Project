@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<MenuBar prefHeight="32.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OptionController">
+         <menus>
+            <Menu id="file" mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="save" mnemonicParsing="false" onAction="#download" text="Save Email" />
+            <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Close" />
+               </items>
+            </Menu>
+      <Menu id="theme" mnemonicParsing="false" text="Theme">
+        <items>
+          <MenuItem mnemonicParsing="false" text="MistSilver" onAction="#mistSilver"/>
+            <MenuItem mnemonicParsing="false" text="Bootstrap" onAction="#bootstrap"/>
+            <MenuItem mnemonicParsing="false" text="Flatter" onAction="#flatter"/>
+            <MenuItem mnemonicParsing="false" text="Normal" onAction="#normal"/>
+        </items>
+      </Menu>
+         </menus>
+      </MenuBar>
